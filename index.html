@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./assets/plugins/bootstrap/dist/css/bootstrap.min.css">
+        
+        <!-- Linked Stylesheet: Animate, DarkMode, Icons & Waves -->
+        <link rel="stylesheet" href="./assets/plugins/animate/animate.min.css">
+        <link rel="stylesheet" href="./assets/plugins/darkmode/dark-mode.css">
+        <link rel="stylesheet" href="./assets/plugins/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="./assets/plugins/waves/dist/waves.min.css">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./lib/css/main.min.css">
+        
+        <!-- Icon -->
+        <link rel="icon" type="image/png" href="./assets/icons/icons.png">
+        
+        <!-- Typed -->
+        <script src="./assets/plugins/typed/lib/typed.min.js"></script>
+    
+        <title>News Web Paper | Koran Online</title>
+    </head>
+    <body class="animate__animated animate__fadeIn bg-light text-dark w-auto" id="top" data-spy="scroll" data-target="#mainNav" data-offset="50">
+        <!-- Navbar -->
+        <nav class="select-navbar navbar navbar-expand-lg navbar-light bg-light text-dark fixed-top shadow pb-4 pt-4" id="mainNav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand text-left font-weight-bold" href="./">NewsWebPaper.id</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarUserSettings" aria-controls="navbarUserSettings" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-user"></span>
+                </button>
+                
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link font-weight-bold" href="./">Beranda <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#bisnis">Bisnis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#sports">Sports</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-none d-xl-block d-lg-block d-md-none d-sm-none" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Berita Lainnya
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#" >Otomotif</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <div class="custom-control custom-switch ml-auto">
+                        <input type="checkbox" class="custom-control-input" id="darkSwitch">
+                        <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+                    </div>
+                </div>   
+                    
+                <div class="collapse navbar-collapse" id="navbarUserSettings">
+                    <div class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-none d-xl-block d-lg-block d-md-none d-sm-none" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                <li><a class="dropdown-item" data-toggle="modal" data-target="#signUpModal">Sign Up</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item disabled" href="#" >Pengaturan</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="darkSwitch">
+                                        <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="">Keluar</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item d-xl-none d-lg-none d-md-block d-sm-block">
+                            <a class="dropdown-item" data-toggle="modal" data-target="#loginModal">Login</a>
+                        </li>
+                        <li class="nav-item d-xl-none d-lg-none d-md-block d-sm-block">
+                            <a class="dropdown-item" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
+                        </li>
+                        <li class="nav-item d-xl-none d-lg-none d-md-block d-sm-block">
+                            <a class="dropdown-item disabled" href="#" >Pengaturan</a>
+                        </li>
+                        <li class="nav-item d-xl-none d-lg-none d-md-block d-sm-block">
+                            <div class="custom-control custom-switch ml-4">
+                                <input type="checkbox" class="custom-control-input" id="darkSwitch2">
+                                <label class="custom-control-label" for="darkSwitch2">Dark Mode</label>
+                            </div>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </nav> 
+
+        <!-- Jumbotron -->
+        <div class="jumbotron mb-0 vh-100 bg-light">
+            <div class="container mt-lg-0 mt-sm-3">
+                <div class="row text-left">
+                    <div class="col-lg-8">
+                        <div class="col-lg-12 align-self-end">
+                            <h1 class="display-4"><br>NEWS WEB <b>PAPER</b></h1>
+                            <h1 class="display-4 d-xl-block d-lg-block d-md-block d-sm-none d-none">
+                            
+                                <span id="typed"></span>
+                                <script>
+                                    var typed2 = new Typed('#typed', {
+                                        strings: ['Straight <b>News</b>', 'Opinion <b>News</b>', 'Interpretative <b>News</b>', 'Depth <b>News</b>', 'Investigation <b>News</b>'],
+                                        typeSpeed: 0,
+                                        backSpeed: 0,
+                                        backDelay: 2500,
+                                        fadeOut: true,
+                                        loop: true
+                                    });
+                                    var typed = new Typed("#typed", options);
+                                </script>
+                            </h1>
+                        </div>
+                        
+                        <div class="dropdown-divider"></div>
+                        
+                        <div class="col-lg-12 align-self-baseline">
+                            <p class="lead">Berita adalah laporan tercepat mengenai fakta atau ide terbaru yang benar, menarik dan atau penting bagi sebagian besar khalayak, melalui media berkala seperti surat kabar, radio, televisi, atau media internet. <i>- Wikipedia</i></p>
+                            <div class="row text-center">
+                                <div class="col-lg-6 col-sm col-md p-1">
+                                <a class="js-scroll-trigger btn btn-info btn-lg shadow d-block" href="#bisnis" role="button"><i class="fas fa-newspaper"></i> Baca Koran</a>
+                                </div>
+                                <div class="col-lg-6 col-sm col-md p-1">
+                                    <a class="js-scroll-trigger btn btn-outline-info btn-lg shadow d-block" href="#intro" role="button"><i class="fas fa-globe"></i> Tentang Kami</a>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="lead"><i>Catatan: Aktifkan mode gelap jika Anda tidak suka dengan mode terang.</i></h6>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 text-right d-none d-xl-block d-lg-block d-md-none d-sm-none animate__animated animate__bounce animate__delay-1s">
+                        <svg id="a751cec9-7d0e-4c8a-a2d9-3a6c65a20454" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 799 667.07575"><title>newspaper</title><path d="M849.5,746.61987h-485l.21874-51.42174c.55348-130.11522,104.40844-237.32948,234.506-239.54236q2.10824-.03587,4.22346-.0359h.0004a245.33553,245.33553,0,0,1,85.75247,15.40589c92.054,34.28252,153.84089,121.38358,157.951,219.52807Z" transform="translate(-200.5 -116.46212)" fill="#17a2b8"/><rect y="630.15774" width="799" height="2" fill="#2f2e41"/><polygon points="398.287 400.165 419.657 415.708 441.028 598.33 491.54 598.33 474.055 390.451 404.115 363.252 398.287 400.165" fill="#2f2e41"/><path d="M509.4184,458.34384s-5.82836,66.05475,17.48508,67.99754,112.68163-19.42787,112.68163-19.42787l42.74131,151.53736,64.112-33.02737s-38.85573-170.96523-62.16917-180.67916-101.02491-29.1418-101.02491-29.1418l-56.34082,9.71393Z" transform="translate(-200.5 -116.46212)" fill="#2f2e41"/><path d="M649.29905,710.90611s-11.65673,44.68409-3.88558,48.56967a140.53483,140.53483,0,0,1,13.59951,7.77114v-7.77114s9.71393,9.71393,9.71393,17.48508,52.45524,9.71393,52.45524,0-1.94278-21.37066-11.65672-27.199-21.37065-38.85573-21.37065-38.85573Z" transform="translate(-200.5 -116.46212)" fill="#2f2e41"/><polygon points="505.14 514.79 509.025 551.703 522.625 575.016 555.652 538.103 530.396 497.305 505.14 514.79" fill="#2f2e41"/><path d="M736.72445,668.1648s7.15372-24.46025,14.26219-21.94406,34.30747,27.77242,34.30747,27.77242L804.722,685.64988s38.85573,3.88558,27.199,15.5423-54.398,27.199-73.82589,19.42786-23.31344-9.71393-23.31344-9.71393l-5.82836,3.88557-23.31344-5.82836,3.88557-40.79852S715.35379,685.64988,736.72445,668.1648Z" transform="translate(-200.5 -116.46212)" fill="#2f2e41"/><circle cx="374.97315" cy="54.34929" r="44.68409" fill="#9f616a"/><path d="M547.30274,197.039s3.88558,40.79852-7.77114,40.79852S541.47438,288.35,572.559,288.35s42.74131-60.22639,42.74131-60.22639-21.37066-7.77115-17.48508-33.02737S547.30274,197.039,547.30274,197.039Z" transform="translate(-200.5 -116.46212)" fill="#9f616a"/><path d="M544.20687,234.72539l-16.332,6.99774L483.5501,260.47592a8.99955,8.99955,0,0,0-5.43656,9.29441l16.734,148.74639s-17.48508,36.91294,9.71394,38.85573L508.447,470.972l31.08459-36.913,116.5672-3.88557,1.94279-188.45031L604.70588,220.647S597.45181,260.755,544.20687,234.72539Z" transform="translate(-200.5 -116.46212)" fill="#3f3d56"/><path d="M489.99054,266.008l-7.17945-2.05127a5.919,5.919,0,0,0-7.47123,4.7594L456.288,388.22347a41.5016,41.5016,0,0,0,4.05469,25.91676c5.8867,11.14588,18.11259,21.25444,43.24739,9.23345l17.48508-126.28113Z" transform="translate(-200.5 -116.46212)" fill="#3f3d56"/><path d="M635.69954,238.809l23.31344,3.88557,64.112,89.36819L728.9533,347.605l36.913-11.65672s-1.94279,17.48508,17.48508,15.5423c0,0-23.31344,64.112-71.88311,44.68409s-64.112-77.71147-64.112-77.71147Z" transform="translate(-200.5 -116.46212)" fill="#3f3d56"/><polygon points="462.399 161.203 374.973 126.232 371.088 137.889 411.886 172.859 462.399 161.203" fill="#ccc"/><path d="M548.56969,173.66c1.65033-.44064,1.89277-2.63175,1.94808-4.339.29622-9.14249,5.80151-18.52371,14.553-21.18523a24.46655,24.46655,0,0,1,10.313-.5675,39.06274,39.06274,0,0,1,13.96661,4.65951c2.27932,1.28145,4.51509,2.82482,7.10047,3.21626,1.70747.25852,9.10059,2.40806,10.80081,2.71057,3.7381.66508,7.2121,4.00959,10.79913,2.765,3.43173-1.19068,4.19139-5.634,4.27434-9.26547.189-8.27324-6.09157-19.72372-11.62353-25.87838-4.198-4.67054-10.519-6.82653-16.698-7.9476a111.168,111.168,0,0,0-21.83787-1.32849c-9.88858.17636-20.05125.93961-28.968,5.21828s-16.40657,12.79425-16.834,22.67516c-.089,2.05828.1233,4.12515-.04976,6.17808-.42218,5.00809-3.08153,9.5316-4.329,14.40017a26.35017,26.35017,0,0,0,3.67977,21.05747c3.30926,4.87005,16.54275,9.29112,16.35142,15.176,2.39183-2.478-3.24866-4.97242-.85683-7.45041a5.89248,5.89248,0,0,0,1.75244-7.19911l-2.53985-9.90672c-.46505-1.814-.92235-3.77752-.21992-5.51327C542.87485,164.40725,545.81807,174.39469,548.56969,173.66Z" transform="translate(-200.5 -116.46212)" fill="#2f2e41"/><polygon points="371.088 137.889 334.175 281.655 477.941 332.168 561.481 262.227 613.936 104.862 528.453 167.031 371.088 137.889" fill="#f2f2f2"/><rect x="647.35642" y="216.98683" width="1.94246" height="144.66914" transform="translate(2.65912 725.90593) rotate(-75.21727)" fill="#e6e6e6"/><rect x="643.47085" y="226.70077" width="1.94246" height="144.66914" transform="translate(-9.62744 729.38435) rotate(-75.21727)" fill="#e6e6e6"/><rect x="641.52806" y="236.4147" width="1.94246" height="144.66914" transform="translate(-20.46692 734.74125) rotate(-75.21727)" fill="#e6e6e6"/><rect x="639.58528" y="246.12863" width="1.94246" height="144.66914" transform="translate(-31.3064 740.09815) rotate(-75.21727)" fill="#e6e6e6"/><rect x="637.64249" y="255.84257" width="1.94246" height="144.66914" transform="translate(-42.14588 745.45505) rotate(-75.21727)" fill="#e6e6e6"/><rect x="635.6997" y="265.5565" width="1.94246" height="144.66914" transform="translate(-52.98536 750.81195) rotate(-75.21727)" fill="#e6e6e6"/><rect x="633.75692" y="275.27043" width="1.94246" height="144.66914" transform="translate(-63.82485 756.16885) rotate(-75.21727)" fill="#e6e6e6"/><rect x="631.81413" y="284.98437" width="1.94246" height="144.66914" transform="translate(-74.66433 761.52575) rotate(-75.21727)" fill="#e6e6e6"/><rect x="629.87134" y="294.6983" width="1.94246" height="144.66914" transform="translate(-85.50381 766.88265) rotate(-75.21727)" fill="#e6e6e6"/><path d="M512.35043,360.10426s43.69485-26.09876,63.12272-8.61368-56.34081,42.7413-56.34081,42.7413Z" transform="translate(-200.5 -116.46212)" fill="#9f616a"/><path d="M464.73431,372.86123l56.34081-21.37065s-9.71393,36.91294,9.71394,38.85573L503.59,423.37368S449.192,423.37368,464.73431,372.86123Z" transform="translate(-200.5 -116.46212)" fill="#3f3d56"/><polygon points="412.494 255.602 487.255 280.799 469.562 319.365 394.801 294.169 412.494 255.602" fill="#e6e6e6"/><polygon points="544.967 173.831 601.308 131.089 585.766 183.545 527.482 226.286 544.967 173.831" fill="#ccc"/><rect x="711.07913" y="339.83365" width="70.7185" height="1.9432" transform="translate(-254.72546 403.94235) rotate(-37.18317)" fill="#e6e6e6"/><rect x="707.19355" y="361.2043" width="70.7185" height="1.9432" transform="translate(-268.43105 405.93854) rotate(-37.18317)" fill="#e6e6e6"/><path d="M777.523,353.43336s48.56966-29.1418,17.48508-40.79852-31.08459,33.02738-31.08459,33.02738S761.98067,355.37615,777.523,353.43336Z" transform="translate(-200.5 -116.46212)" fill="#9f616a"/><polygon points="292.405 171.888 290.462 247.657 320.575 239.063 296.29 239.885 292.405 171.888" opacity="0.1"/><path d="M280.90863,712.35433c6.07317,22.45006,26.87512,36.35395,26.87512,36.35395s10.95541-22.49485,4.88225-44.94491-26.87512-36.354-26.87512-36.354S274.83547,689.90427,280.90863,712.35433Z" transform="translate(-200.5 -116.46212)" fill="#8985a8"/><path d="M289.83272,707.52957c16.66484,16.22256,18.70033,41.1604,18.70033,41.1604s-24.98356-1.36411-41.64841-17.58667-18.70033-41.1604-18.70033-41.1604S273.16787,691.307,289.83272,707.52957Z" transform="translate(-200.5 -116.46212)" fill="#3f3d56"/><rect x="626" y="379.15774" width="30" height="30" fill="#f2f2f2"/><rect x="506" y="39.15774" width="30" height="30" fill="#f2f2f2"/><circle cx="159" cy="328.15774" r="15" fill="#f2f2f2"/></svg>
+                    </div>
+                </div>
+                
+                <div class="row text-center mb-5 fixed-bottom">
+                    <div class="col-lg">
+                        <a class="autohide btnnext js-scroll-trigger btn btn-info btn-lg animate__animated animate__bounceInUp animate__delay-3s shadow" href="#first" role="button"><i class="fa fa-arrow-down"></i></a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="bg-light">
+            <!-- First Section -->
+            <section>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center mr-auto ml-auto wow animate__animated animate__fadeInUp vh-100" id="first">
+                        <div class="col-lg-3 text-center wow animate__animated animate__fadeInLeft">
+                            <p><h1 class="bg-info shadow rounded text-white p-3 fas fa-mobile display-4"></h1></p>
+                            <p class="lead font-weight-bold">MUDAH DAN INTUITIF</p>
+                            <p class="lead">Hanya dengan satu klik, Anda bisa membaca berita secara online.</p>
+                        </div>
+                        <div class="col-lg-3 text-center wow animate__animated animate__fadeInUp">
+                            <p><h1 class="bg-info shadow rounded text-white p-3 fas fa-globe display-4"></h1></p>
+                            <p class="lead font-weight-bold">AKSES REALTIME</p>
+                            <p class="lead">Akses secara realtime untuk berita online ini. Buka kapankun!</p>
+                        </div>
+                        <div class="col-lg-3 text-center wow animate__animated animate__fadeInUp">
+                            <p><h1 class="bg-info shadow rounded text-white p-3 fas fa-tv display-4"></h1></p>
+                            <p class="lead font-weight-bold">MULTI PLATFORM</p>
+                            <p class="lead">Anda bisa buka di Aplikasi maupun di Website ini sekaligus.</p>
+                        </div>
+                        <div class="col-lg-3 text-center wow animate__animated animate__fadeInRight">
+                            <p><h1 class="bg-info shadow rounded text-white p-3 fas fa-users display-4"></h1></p>
+                            <p class="lead font-weight-bold">USER-FRIENDLY</p>
+                            <p class="lead">Tampilan yang sederhana, tetap menonjolkan sisi hebat pada berita.</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-center text-center mr-auto ml-auto wow animate__animated animate__fadeIn">
+                        <div class="col-lg text-center align-items-center">
+                            <p><a href="#intro" class="align-items-center js-scroll-trigger btn btn-info animate__animated animate__fadeIn animate__delay-3s shadow">Lanjut Baca</a></p>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+        
+            <!-- Intro Section -->
+            <section>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center mr-auto ml-auto wow animate__animated animate__fadeInUp vh-100" id="intro">
+                        <div class="col-lg-6 text-left">
+                            <p class="lead font-weight-bold">MUDAH DAN INTUITIF</p>
+                            <h1 class="display-5">Kemudahan dalam <b style="text-decoration: underline;">Membaca</b>.</h1>
+                            <p class="lead">Hanya dengan satu klik, Anda bisa membaca berita secara online. <b>NewsWebPaper.id</b> Menyediakan banyak tipe berita yang bisa Anda lihat secara realtime pada website ini.</p>
+                            <p class="pt-5"><a href="#bisnis" class="js-scroll-trigger btn btn-info animate__animated animate__fadeIn shadow">Baca Berita</a></p>
+                        </div>
+                        <div class="col-lg-6 text-right d-none d-xl-block d-lg-block d-md-none d-sm-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="a76d04cf-4eac-47e3-b05a-1f8f938c71e5" data-name="Layer 1" width="480" height="360" viewBox="0 0 856 495.15768"><rect y="339.20986" width="856" height="2" fill="#3f3d56"/><path d="M790.98251,682.84065H220.29076a19.1356,19.1356,0,0,1-19.1356-19.1356v0q310.31347-36.06437,608.963,0v0A19.1356,19.1356,0,0,1,790.98251,682.84065Z" transform="translate(-172 -202.42116)" fill="#2f2e41"/><path d="M810.11811,664.83065,201.15516,663.705l70.57668-118.7534.33768-.56282v-261.719a24.18764,24.18764,0,0,1,24.18966-24.18966h415.378a24.18764,24.18764,0,0,1,24.18966,24.18966v263.52Z" transform="translate(-172 -202.42116)" fill="#3f3d56"/><path d="M295.70764,275.36452a7.88822,7.88822,0,0,0-7.87938,7.87937V521.87632a7.88858,7.88858,0,0,0,7.87938,7.87937h419.858a7.88892,7.88892,0,0,0,7.87937-7.87937V283.24389a7.88857,7.88857,0,0,0-7.87937-7.87937Z" transform="translate(-172 -202.42116)" fill="#fff"/><path d="M297.467,561.27318a3.38619,3.38619,0,0,0-3.068,1.96545l-21.74687,47.27624a3.37672,3.37672,0,0,0,3.06743,4.7883H733.0447a3.37649,3.37649,0,0,0,3.01962-4.88723L712.4262,563.1397a3.35975,3.35975,0,0,0-3.01962-1.86652Z" transform="translate(-172 -202.42116)" fill="#2f2e41"/><circle cx="331.9482" cy="63.93836" r="5.06531" fill="#fff"/><path d="M458.99686,624.30817a3.382,3.382,0,0,0-3.26035,2.49858l-5.455,20.26124a3.37655,3.37655,0,0,0,3.26035,4.25517H557.28346a3.3761,3.3761,0,0,0,3.19-4.48161L553.4603,626.5803a3.37866,3.37866,0,0,0-3.19111-2.27213Z" transform="translate(-172 -202.42116)" fill="#2f2e41"/><polygon points="563.827 338.028 563.827 342.53 99.732 342.53 100.081 341.968 100.081 338.028 563.827 338.028" fill="#2f2e41"/><path d="M347.2859,324.91224a6.20636,6.20636,0,0,0-6.11,6.28545V473.66794a6.20636,6.20636,0,0,0,6.11,6.28545H663.98737a6.20637,6.20637,0,0,0,6.11-6.28545V331.19769a6.20637,6.20637,0,0,0-6.11-6.28545Z" transform="translate(-172 -202.42116)" fill="#e6e6e6"/><path d="M529.22387,480.208h115.2864a3.71131,3.71131,0,0,0,2.62439-6.33524l-73.78487-73.78487a3.71534,3.71534,0,0,0-5.24829,0l-18.34838,18.34839a7.783,7.783,0,0,1-11.00824,0l-57.46966-57.46967a3.71594,3.71594,0,0,0-5.24879,0l-112.397,112.397a3.71131,3.71131,0,0,0,2.62439,6.33525H529.37155Z" transform="translate(-172 -202.42116)" fill="#17a2b8"/><circle cx="220.09254" cy="156.09606" r="14.25666" fill="#17a2b8"/><path d="M354.88666,376.48591a1.01839,1.01839,0,0,1-1.01834-1.01833V307.23929a1.0184,1.0184,0,0,1,1.01834-1.01834h78.41161a1.01834,1.01834,0,1,1,0,2.03667H355.905v67.21A1.01838,1.01838,0,0,1,354.88666,376.48591Z" transform="translate(-172 -202.42116)" fill="#3f3d56"/><path d="M656.31313,377.50424a1.01806,1.01806,0,0,1-1.01833-1.01833v-67.21H577.90151a1.01833,1.01833,0,1,1,0-2.03666h78.41162a1.01806,1.01806,0,0,1,1.01833,1.01833v68.22829A1.01806,1.01806,0,0,1,656.31313,377.50424Z" transform="translate(-172 -202.42116)" fill="#3f3d56"/><path d="M433.29827,497.6675H354.88666a1.01807,1.01807,0,0,1-1.01834-1.01833V428.42088a1.01834,1.01834,0,1,1,2.03667,0v67.20995h77.39328a1.01834,1.01834,0,1,1,0,2.03667Z" transform="translate(-172 -202.42116)" fill="#3f3d56"/><path d="M656.31313,498.68583H577.90151a1.01833,1.01833,0,1,1,0-2.03666H655.2948v-67.21a1.01833,1.01833,0,0,1,2.03666,0V497.6675A1.01774,1.01774,0,0,1,656.31313,498.68583Z" transform="translate(-172 -202.42116)" fill="#3f3d56"/><path d="M985.59269,483.37923h0a11.48805,11.48805,0,0,0,12.60354-11.43377V447.46655l-16.00961-1.92115-6.539,23.29533A11.48806,11.48806,0,0,0,985.59269,483.37923Z" transform="translate(-172 -202.42116)" fill="#ffb8b8"/><path d="M847.12522,494.76151h0a11.48807,11.48807,0,0,0,10.13706-13.66823l-4.76453-24.01075-16.07735,1.23166-1.87983,24.12256A11.48806,11.48806,0,0,0,847.12522,494.76151Z" transform="translate(-172 -202.42116)" fill="#ffb8b8"/><path d="M892.53285,676.08375l18.70945.79974c-4.00176-75.62-2.75489-139.58654,8.18669-182.0285,13.61706,48.45584,18.29985,112.04412,18.65979,182.95425l20.40365-1.72549c8.721-83.96891,13.14375-161.60319,3.84231-219.01143-29.1846-16.95559-61.50247-17.0073-97.33841,1.92115C864.19258,523.3048,875.22225,597.16115,892.53285,676.08375Z" transform="translate(-172 -202.42116)" fill="#2f2e41"/><path d="M895.949,672.19252l-7.9385,2.64617s-16.75906-4.41028-12.34878,7.05644,16.75905,9.70261,16.75905,9.70261,14.995,11.46672,21.16933,2.64617l-3.52822-18.52317Z" transform="translate(-172 -202.42116)" fill="#2f2e41"/><path d="M951.87439,672.19252l7.9385,2.64617s16.75905-4.41028,12.34877,7.05644-16.75905,9.70261-16.75905,9.70261-14.99494,11.46672-21.16933,2.64617l3.52822-18.52317Z" transform="translate(-172 -202.42116)" fill="#2f2e41"/><circle cx="716.05016" cy="33.07819" r="26.25576" fill="#ffb8b8"/><path d="M884.84824,288.01086l39.70383-10.88653c-10.046-12.31618-13.68751-26.24162-11.52692-41.625H884.84824Z" transform="translate(-172 -202.42116)" fill="#ffb8b8"/><path d="M862.43479,464.75693c35.47578-13.08012,70.22316-15.51513,103.74226,0-9.68933-63.72639-12.759-121.22835-2.39542-161.22037a16.85692,16.85692,0,0,0-9.46516-19.69L918.78861,268.159,884.84824,273.282l-28.65132,20.79531A16.80513,16.80513,0,0,0,850.44,313.87639C865.53684,351.90642,868.30476,403.55942,862.43479,464.75693Z" transform="translate(-172 -202.42116)" fill="#17a2b8"/><path d="M981.54627,447.46655l18.57114,1.92116-18.9337-133.61786a39.42944,39.42944,0,0,0-27.12213-32.05344l-2.61337-.82862,3.8423,71.723Z" transform="translate(-172 -202.42116)" fill="#17a2b8"/><path d="M853.62546,460.15964,835.5936,465.0001l-2.48452-134.92978a39.42941,39.42941,0,0,1,21.6987-35.94717l2.449-1.23238,7.5746,71.42537Z" transform="translate(-172 -202.42116)" fill="#17a2b8"/><path d="M913.90039,255.35331s21.52733-26.09706,1.51061-45.17682c-13.88646-13.23646-33.58037-6.63928-44.34071-1.35692a19.86526,19.86526,0,0,0-11.09272,14.79467c-.71674,4.94.46637,9.373,8.06573,7.3448,15.19874-4.05637,10.64164,9.37086,10.64164,9.37086s10.80855-.17112,10.64164,9.37087S913.90039,255.35331,913.90039,255.35331Z" transform="translate(-172 -202.42116)" fill="#2f2e41"/></svg>              
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Bisnis Section -->
+            <section>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center mr-auto ml-auto wow animate__animated animate__fadeInUp vh-100" id="bisnis">
+                        <div class="col-lg-6 text-right d-none d-xl-block d-lg-block d-md-none d-sm-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="f26437e7-89a7-4b5d-86a1-b6b68813c70b" data-name="Layer 1" width="480" height="360" viewBox="0 0 769.41145 524.37473"><circle cx="174.75708" cy="6.81334" r="6.81335" fill="#e6e6e6"/><circle cx="209.24609" cy="6.81334" r="6.81335" fill="#e6e6e6"/><circle cx="243.73517" cy="6.81334" r="6.81335" fill="#e6e6e6"/><circle cx="278.22418" cy="6.81334" r="6.81335" fill="#e6e6e6"/><circle cx="312.71326" cy="6.81334" r="6.81335" fill="#e6e6e6"/><circle cx="174.75708" cy="41.73529" r="6.81335" fill="#e6e6e6"/><circle cx="209.24609" cy="41.73529" r="6.81335" fill="#e6e6e6"/><circle cx="243.73517" cy="41.73529" r="6.81335" fill="#e6e6e6"/><circle cx="278.22418" cy="41.73529" r="6.81335" fill="#17a2b8"/><circle cx="312.71326" cy="41.73529" r="6.81335" fill="#e6e6e6"/><circle cx="381.69135" cy="41.73529" r="6.81335" fill="#e6e6e6"/><circle cx="174.75708" cy="76.65724" r="6.81335" fill="#e6e6e6"/><circle cx="209.24609" cy="76.65724" r="6.81335" fill="#e6e6e6"/><circle cx="243.73517" cy="76.65724" r="6.81335" fill="#e6e6e6"/><circle cx="278.22418" cy="76.65724" r="6.81335" fill="#e6e6e6"/><circle cx="312.71326" cy="76.65724" r="6.81335" fill="#e6e6e6"/><circle cx="174.75708" cy="111.57918" r="6.81335" fill="#e6e6e6"/><circle cx="209.24609" cy="111.57918" r="6.81335" fill="#e6e6e6"/><circle cx="243.73517" cy="111.57918" r="6.81335" fill="#e6e6e6"/><circle cx="278.22418" cy="111.57918" r="6.81335" fill="#e6e6e6"/><circle cx="312.71326" cy="111.57918" r="6.81335" fill="#e6e6e6"/><circle cx="347.20227" cy="111.57918" r="6.81335" fill="#e6e6e6"/><circle cx="381.69135" cy="111.57918" r="6.81335" fill="#e6e6e6"/><circle cx="416.18036" cy="111.57918" r="6.81335" fill="#e6e6e6"/><circle cx="450.66943" cy="111.57918" r="6.81335" fill="#e6e6e6"/><circle cx="485.15845" cy="111.57918" r="6.81335" fill="#e6e6e6"/><circle cx="312.71326" cy="146.50113" r="6.81335" fill="#e6e6e6"/><circle cx="347.20227" cy="146.50113" r="6.81335" fill="#17a2b8"/><circle cx="381.69135" cy="146.50113" r="6.81335" fill="#e6e6e6"/><circle cx="416.18036" cy="146.50113" r="6.81335" fill="#e6e6e6"/><circle cx="450.66943" cy="146.50113" r="6.81335" fill="#e6e6e6"/><circle cx="485.15845" cy="146.50113" r="6.81335" fill="#e6e6e6"/><circle cx="312.71326" cy="181.42308" r="6.81335" fill="#e6e6e6"/><circle cx="347.20227" cy="181.42308" r="6.81335" fill="#e6e6e6"/><circle cx="381.69135" cy="181.42308" r="6.81335" fill="#e6e6e6"/><circle cx="416.18036" cy="181.42308" r="6.81335" fill="#e6e6e6"/><circle cx="450.66943" cy="181.42308" r="6.81335" fill="#17a2b8"/><circle cx="485.15845" cy="181.42308" r="6.81335" fill="#e6e6e6"/><circle cx="312.71326" cy="216.34503" r="6.81335" fill="#e6e6e6"/><circle cx="347.20227" cy="216.34503" r="6.81335" fill="#e6e6e6"/><circle cx="381.69135" cy="216.34503" r="6.81335" fill="#e6e6e6"/><circle cx="416.18036" cy="216.34503" r="6.81335" fill="#e6e6e6"/><circle cx="450.66943" cy="216.34503" r="6.81335" fill="#e6e6e6"/><circle cx="485.15845" cy="216.34503" r="6.81335" fill="#e6e6e6"/><circle cx="174.75708" cy="251.26698" r="6.81335" fill="#e6e6e6"/><circle cx="209.24609" cy="251.26698" r="6.81335" fill="#e6e6e6"/><circle cx="243.73517" cy="251.26698" r="6.81335" fill="#e6e6e6"/><circle cx="278.22418" cy="251.26698" r="6.81335" fill="#e6e6e6"/><circle cx="312.71326" cy="251.26698" r="6.81335" fill="#e6e6e6"/><circle cx="347.20227" cy="251.26698" r="6.81335" fill="#e6e6e6"/><circle cx="381.69135" cy="251.26698" r="6.81335" fill="#e6e6e6"/><circle cx="416.18036" cy="251.26698" r="6.81335" fill="#e6e6e6"/><circle cx="450.66943" cy="251.26698" r="6.81335" fill="#e6e6e6"/><circle cx="485.15845" cy="251.26698" r="6.81335" fill="#e6e6e6"/><circle cx="174.75314" cy="286.18785" r="6.81334" fill="#e6e6e6"/><circle cx="209.24609" cy="286.18893" r="6.81335" fill="#e6e6e6"/><circle cx="174.75308" cy="321.1096" r="6.81334" fill="#e6e6e6"/><circle cx="209.24609" cy="321.11087" r="6.81335" fill="#e6e6e6"/><circle cx="278.22418" cy="321.11087" r="6.81335" fill="#e6e6e6"/><path d="M837.29482,268.19654H567.29428a5.00586,5.00586,0,0,1-5-5V196.221a5.00587,5.00587,0,0,1,5-5H837.29482a5.00587,5.00587,0,0,1,5,5v66.97557A5.00586,5.00586,0,0,1,837.29482,268.19654ZM567.29428,193.221a3.00328,3.00328,0,0,0-3,3v66.97557a3.00328,3.00328,0,0,0,3,3H837.29482a3.00328,3.00328,0,0,0,3-3V196.221a3.00328,3.00328,0,0,0-3-3Z" transform="translate(-215.29428 -187.81263)" fill="#e6e6e6"/><circle cx="387" cy="41.89587" r="21" fill="#17a2b8"/><path d="M650.79428,215.70849a3.5,3.5,0,1,0,0,7h93a3.5,3.5,0,1,0,0-7Z" transform="translate(-215.29428 -187.81263)" fill="#e6e6e6"/><path d="M650.79428,236.70849a3.5,3.5,0,1,0,0,7H815.79434a3.5,3.5,0,1,0,0-7Z" transform="translate(-215.29428 -187.81263)" fill="#e6e6e6"/><path d="M490.29476,404.19654H220.29428a5.00587,5.00587,0,0,1-5-5V332.221a5.00587,5.00587,0,0,1,5-5H490.29476a5.00588,5.00588,0,0,1,5,5v66.97558A5.00587,5.00587,0,0,1,490.29476,404.19654ZM220.29428,329.221a3.00328,3.00328,0,0,0-3,3v66.97558a3.00328,3.00328,0,0,0,3,3H490.29476a3.00328,3.00328,0,0,0,3-3V332.221a3.00328,3.00328,0,0,0-3-3Z" transform="translate(-215.29428 -187.81263)" fill="#e6e6e6"/><circle cx="40" cy="177.89587" r="21" fill="#17a2b8"/><path d="M303.79428,351.70851a3.5,3.5,0,0,0,0,7h97a3.5,3.5,0,0,0,0-7Z" transform="translate(-215.29428 -187.81263)" fill="#e6e6e6"/><path d="M303.79428,372.70851a3.5,3.5,0,0,0,0,7h165a3.5,3.5,0,0,0,0-7Z" transform="translate(-215.29428 -187.81263)" fill="#e6e6e6"/><path d="M734.29476,551.19654H464.29428a5.00587,5.00587,0,0,1-5-5V479.221a5.00587,5.00587,0,0,1,5-5H734.29476a5.00588,5.00588,0,0,1,5,5v66.97558A5.00587,5.00587,0,0,1,734.29476,551.19654ZM464.29428,476.221a3.00328,3.00328,0,0,0-3,3v66.97558a3.00328,3.00328,0,0,0,3,3H734.29476a3.00328,3.00328,0,0,0,3-3V479.221a3.00328,3.00328,0,0,0-3-3Z" transform="translate(-215.29428 -187.81263)" fill="#3f3d56"/><circle cx="284" cy="324.89587" r="21" fill="#17a2b8"/><path d="M547.79428,498.70851a3.5,3.5,0,0,0,0,7h89a3.5,3.5,0,0,0,0-7Z" transform="translate(-215.29428 -187.81263)" fill="#e6e6e6"/><path d="M547.79428,519.70851a3.5,3.5,0,0,0,0,7h165a3.5,3.5,0,0,0,0-7Z" transform="translate(-215.29428 -187.81263)" fill="#e6e6e6"/><path d="M879.54366,534.21071c-11.72577,35.17727-59.69483-2.132-59.69483-2.132l12.79175-133.24728c19.18762-14.92374,39.44122-2.132,39.44122-2.132Z" transform="translate(-215.29428 -187.81263)" fill="#e6e6e6"/><polygon points="661.731 464.458 678.076 464.63 673.993 511.745 661.733 511.746 661.731 464.458" fill="#ffb8b8"/><path d="M873.89973,695.555h24.1438a15.40412,15.40412,0,0,1,15.38684,15.38672v.5H873.89973Z" transform="translate(-215.29428 -187.81263)" fill="#2f2e41"/><polygon points="617.421 464.458 599.327 464.457 605.159 511.745 617.419 511.746 617.421 464.458" fill="#ffb8b8"/><path d="M796.30891,711.44127v-.5A15.38689,15.38689,0,0,1,811.69636,695.555l24.144.001-.00073,15.88721Z" transform="translate(-215.29428 -187.81263)" fill="#2f2e41"/><path d="M875.92182,691.39635l-21.413-124.82275-19.8396,123.21386-20.10059,1.1167-5.35986-165.08593.404-.09034c3.32324-.74414,81.53675-17.92285,94.35852,6.65235l.06507.12451L893.33491,691.95787Z" transform="translate(-215.29428 -187.81263)" fill="#2f2e41"/><circle cx="637.93377" cy="170.84252" r="24.56103" fill="#ffb8b8"/><path d="M873.86189,544.73717c-2.879-.79736-4.95374-4.10351-6.52906-10.40527-.2716-1.08643-25.772-109.71143-4.20691-129.3916l4.97083-13.80811,6.80261,4.53516c2.40711.02246,27.02075.64551,29.12439,16.42285,2.05933,15.44336,7.66553,118.91308,2.0304,125.34912a1.21859,1.21859,0,0,1-.927.46924c-5.71069,0-7.44421-6.33643-7.85144-8.356-1.35791.5625-5.4021,2.62891-12.04858,9.27539-4.11706,4.11719-7.34521,6.09033-10.01221,6.09033A5.03681,5.03681,0,0,1,873.86189,544.73717Z" transform="translate(-215.29428 -187.81263)" fill="#2f2e41"/><path d="M820.56135,538.828c-6.64844-6.64844-10.69312-8.71435-12.04858-9.27539-.40723,2.01953-2.14087,8.356-7.85157,8.356a1.21859,1.21859,0,0,1-.927-.46924c-5.63452-6.43555-.02881-109.90527,2.03027-125.34912,2.10376-15.77734,26.71753-16.40039,29.12452-16.42285l6.80273-4.53516,4.9707,13.80811c21.5636,19.67871-3.9353,128.30517-4.20678,129.3916-1.57544,6.30176-3.65015,9.60791-6.52906,10.40527a5.03687,5.03687,0,0,1-1.353.18115C827.90656,544.91832,824.67805,542.94469,820.56135,538.828Z" transform="translate(-215.29428 -187.81263)" fill="#2f2e41"/><path d="M873.50569,372.6848a25.2045,25.2045,0,0,0-12.20761-45.54c-2.261-.22632-4.6962-.19263-6.57089-1.47671-1.66538-1.14075-2.56235-3.11927-4.09274-4.43557a8.92882,8.92882,0,0,0-6.92633-1.746,25.06232,25.06232,0,0,0-6.96241,2.28755c-5.4461,2.4281-11.23532,5.41651-13.71368,10.83994-2.14673,4.69778-1.19916,10.49066,1.83963,14.66717a20.40969,20.40969,0,0,0,13.01642,7.6857,32.53463,32.53463,0,0,0,15.28491-1.3764c3.24149-1.02,6.44168-2.40994,9.83795-2.52344a13.36948,13.36948,0,0,1,10.14533,22.56406" transform="translate(-215.29428 -187.81263)" fill="#2f2e41"/><path d="M739.63564,518.79392a10.80089,10.80089,0,0,0,10.54768-11.04832l14.32324-24.16626L753.43994,473.4335,738.35223,497.244a10.80119,10.80119,0,0,0,1.28341,21.54995Z" transform="translate(-215.29428 -187.81263)" fill="#ffb8b8"/><path d="M905.80824,545.26863A10.80089,10.80089,0,0,0,908.9576,530.322l-.54831-28.0867-14.75055-2.7981L893.3698,527.624a10.80119,10.80119,0,0,0,12.43844,17.64462Z" transform="translate(-215.29428 -187.81263)" fill="#ffb8b8"/><path d="M743.993,479.93617l-.167-.26541.16543-.2657c21.48348-34.49883,66.57905-77.59335,67.03216-78.0249l.14261-.13567,5.56988-.05712,6.02086,15c-1.87458,3.60607-52.39573,74.10985-59.067,78.78606a4.60271,4.60271,0,0,1-3.68455.69416,9.69861,9.69861,0,0,1-3.12459-1.33052C750.7247,490.52412,744.30819,480.43524,743.993,479.93617Z" transform="translate(-215.29428 -187.81263)" fill="#2f2e41"/><path d="M890.85188,519.30309a4.57042,4.57042,0,0,1-2.707-2.48438c-3.21644-7.50488,10.56933-102.30224,11.15771-106.334l.11133-.7627,4.6604,2.95313.04565.20117c.13758.60547,13.71253,60.99707,10.033,101.126l-.02637.28711-.26135.12109c-.56067.25977-11.868,5.45264-19.40417,5.45264A10.19225,10.19225,0,0,1,890.85188,519.30309Z" transform="translate(-215.29428 -187.81263)" fill="#2f2e41"/><path d="M983.70572,712.18737h-266a1,1,0,0,1,0-2h266a1,1,0,0,1,0,2Z" transform="translate(-215.29428 -187.81263)" fill="#3f3d56"/></svg>  
+                        </div>
+                        <div class="col-lg-6 text-left">
+                            <p class="lead font-weight-bold">BERITA BISNIS</p>
+                            <h1 class="display-5">Melihat statistik <b>Bisnis</b> pada masa kini.</h1>
+                            <p class="lead">Hanya dengan satu klik, Anda bisa membaca berita secara online. <b>NewsWebPaper.id</b> Menyediakan banyak tipe berita yang bisa Anda lihat secara realtime pada website ini.</p>
+                            <p class="pt-5"><a href="#sports" class="js-scroll-trigger btn btn-outline-info animate__animated animate__fadeIn shadow">Lanjut Ke bawah</a> <a href="./news/" class="btn btn-info animate__animated animate__fadeIn shadow">Baca Berita</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sports Section -->
+            <section>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center mr-auto ml-auto wow animate__animated animate__fadeInUp vh-100" id="sports">
+                        <div class="col-lg-6 text-left">
+                            <p class="lead font-weight-bold">BERITA OLAHRAGA</p>
+                            <h1 class="display-5">Melihat berita <b>Olahraga</b> pada masa kini.</h1>
+                            <p class="lead">Hanya dengan satu klik, Anda bisa membaca berita secara online. <b>NewsWebPaper.id</b> Menyediakan banyak tipe berita yang bisa Anda lihat secara realtime pada website ini.</p>
+                            <p class="pt-5"><a href="#more" class="js-scroll-trigger btn btn-outline-info animate__animated animate__fadeIn shadow">Lanjut Ke bawah</a> <a href="./news/" class="btn btn-info animate__animated animate__fadeIn shadow">Baca Berita</a></p>
+                        </div>
+                        <div class="col-lg-6 text-right d-none d-xl-block d-lg-block d-md-none d-sm-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="a3d13d42-87da-4aff-8252-a292de51d919" data-name="Layer 1" width="480" height="360" viewBox="0 0 963.5 866.4359"><title>greek_freak</title><path d="M1034.51,821.29v.95c0,.25,0,.51-.02.76a58.68911,58.68911,0,0,1-12.87,35.6c-.41.53-.84,1.04-1.27991,1.55-.66016.78-1.34009,1.53-2.04,2.27-.06006.06-.12012.13-.19006.19l-.02991.03c-.08008.08-.16016.17-.24.25q-1.84515,1.90494-3.87012,3.65c-.27.23-.55.47-.84.7A58.79236,58.79236,0,0,1,976,880.8c-.1.01-.21.01-.31006.01h-.34985c-.1001,0-.20008,0-.30005-.01-.3501,0-.69006-.01-1.04-.02a58.72831,58.72831,0,0,1-36.90991-14.19c-.28-.23-.56006-.47-.83008-.72-1.07007-.94-2.1001-1.93-3.09009-2.95-.07983-.08-.15991-.17-.24-.25l-.02991-.03c-.06994-.06-.13-.13-.19006-.19-.84-.88-1.6499-1.79-2.42993-2.72q-.64508-.765-1.26-1.56A58.61459,58.61459,0,0,1,916.49,823c-.02-.24-.02-.49-.02-.74v-.93c0-.11,0-.22.01-.33A58.69289,58.69289,0,0,1,928.79,785.68q.61486-.795,1.26-1.56c.79-.96,1.61987-1.89,2.47-2.8.06006-.07.12-.13.18994-.2,0-.01.01-.02.02-.03.08008-.08.16-.17.25-.25q1.66517-1.725,3.47-3.32c.27-.25.55005-.49.83008-.72A58.77748,58.77748,0,0,1,974.98,762.77c.1001-.01.21-.01.31006-.01h.6499a58.80169,58.80169,0,0,1,37,13.4c.28.24.56006.47.84009.71,1.46,1.24,2.86,2.56,4.18994,3.94.08008.08.16.17.24.25l.02.02c.07007.06.14.14.2.2.74.78,1.45007,1.59,2.14014,2.41.43994.51.85986,1.02,1.27991,1.55A58.69052,58.69052,0,0,1,1034.5,821,2.807,2.807,0,0,1,1034.51,821.29Z" transform="translate(-118.25 -16.78205)" fill="#17a2b8"/><rect x="855.75" y="746.21795" width="2" height="118" fill="#fff"/><rect x="797.75" y="804.21795" width="118.51001" height="2" fill="#fff"/><path d="M949.98,821a45.92906,45.92906,0,0,0-19.92993-36.88q-.64508.765-1.26,1.56A43.96072,43.96072,0,0,1,947.99,821c.01.33.01.66.01,1s0,.67-.01,1a44.004,44.004,0,0,1-18.97,35.17q.61486.795,1.26,1.56A45.95941,45.95941,0,0,0,949.98,823c.02-.33.02-.67.02-1S950,821.33,949.98,821Z" transform="translate(-118.25 -16.78205)" fill="#fff"/><path d="M1002.01,823c-.01-.33-.01-.66-.01-1s0-.67.01-1a43.99751,43.99751,0,0,1,19.84-35.76c-.42-.53-.84-1.04-1.27991-1.55A45.96454,45.96454,0,0,0,1000.02,821c-.02.33-.02.67-.02,1s0,.67.02,1a45.95016,45.95016,0,0,0,20.32007,37.15c.43994-.51.86987-1.02,1.27991-1.55A43.981,43.981,0,0,1,1002.01,823Z" transform="translate(-118.25 -16.78205)" fill="#fff"/><rect y="863.65795" width="963.5" height="2.23999" fill="#2f2e41"/><path d="M1026.48892,432.62283A414.549,414.549,0,0,1,912.21881,719.16669c-.49979.53016-1.0096,1.06038-1.5194,1.59055a415.99933,415.99933,0,0,1-600.19991.23022c-.51021-.52977-1.02043-1.05961-1.52063-1.58938a415.996,415.996,0,0,1-1.33933-571.80953c.48978-.54023.99959-1.07039,1.5094-1.60062a416.00336,416.00336,0,0,1,602.45991-.23109c.51022.52984,1.02043,1.05961,1.51063,1.59946A414.50971,414.50971,0,0,1,1026.48892,432.62283Z" transform="translate(-118.25 -16.78205)" fill="#3f3d56"/><rect x="76.23895" y="415.00035" width="832" height="2" fill="#fff"/><rect x="491.23895" y="0.00035" width="2" height="832" fill="#fff"/><path d="M428.53632,295.67219a353.75173,353.75173,0,0,0-76.12324-112.81083,356.31017,356.31017,0,0,0-43.26414-36.87343c-.50981.53023-1.01962,1.06039-1.5094,1.60062,88.85462,64.1259,146.80465,168.54368,146.8498,286.25369.045,117.21-57.3351,221.292-145.51047,285.55584.5002.52977,1.01042,1.05961,1.52063,1.58938a356.73685,356.73685,0,0,0,42.10615-36.08616,355.36118,355.36118,0,0,0,75.93067-389.22911Z" transform="translate(-118.25 -16.78205)" fill="#fff"/><path d="M766.48932,433.72256c-.04515-117.71,57.82476-222.17222,146.63016-286.36626-.4902-.53985-1.00041-1.06962-1.51063-1.59946a355.31295,355.31295,0,0,0-.90944,575.0004c.5098-.53017,1.01961-1.06039,1.5194-1.59055C824.00418,654.97048,766.53428,550.93252,766.48932,433.72256Z" transform="translate(-118.25 -16.78205)" fill="#fff"/><polygon points="390.955 704.422 388.184 759.842 417.279 765.384 425.592 712.735 390.955 704.422" fill="#9d616a"/><polygon points="535.046 722.434 541.974 768.155 568.298 768.155 562.756 719.663 535.046 722.434" fill="#9d616a"/><path d="M514.74687,614.521l-5.542,63.73283-5.542,54.03436s20.78244-8.313,40.17939,4.15648c0,0,12.46947-2.771,9.69847-56.80534L566.01023,622.834Z" transform="translate(-118.25 -16.78205)" fill="#efefef"/><path d="M626.97206,635.30342s8.313,49.87786,12.46947,54.03435c0,0,6.86206,44.60339,10.1953,55.87859a10.05517,10.05517,0,0,0,.88867,2.31225c2.771,4.15649,33.25191,13.855,34.63741-2.771s5.542-44.33588-8.313-65.11832l-8.313-52.64886Z" transform="translate(-118.25 -16.78205)" fill="#efefef"/><path d="M710.79459,629.06869c-1.3855,15.24045-77.58779,12.46946-91.44275,12.46946-4.37839,0-10.00291-.67888-12.80231-8.24363-4.79377-12.92679-7.42608-31.81111-8.313-39.19575-.35991,6.84427-3.51922,23.41475-11.41614,34.02787-4.808,6.484-12.76037,5.19561-21.50293,3.713-14.52-2.46623-43.38-11.44422-51.26336-9.69848-12.46947,2.771-27.4745,3.048-27.70993,0a35.6842,35.6842,0,0,1,.02774-5.00162c1.82861-28.65213,28.37494-106.32314,28.37494-112.07281,0-6.92748,12.46946-36.0229,12.46946-36.0229L654.682,453.80341s50.4874,136.19435,57.42909,169.72329C712.70641,626.42234,710.90554,627.86331,710.79459,629.06869Z" transform="translate(-118.25 -16.78205)" fill="#efefef"/><path d="M539.6858,775.23854l-36.0229-6.92748,3.46374,57.49809,28.40267,20.0897S532.75832,790.479,539.6858,775.23854Z" transform="translate(-118.25 -16.78205)" fill="#efefef"/><path d="M686.5484,771.08205s-18.01145,11.084-33.25191,0L665.766,822.34541l20.78244-2.771S696.24688,789.0935,686.5484,771.08205Z" transform="translate(-118.25 -16.78205)" fill="#efefef"/><path d="M690.70489,814.03244s-29.09542,1.38549-29.09542,4.15648V863.9103c0,4.15649,5.542,9.69847,4.15649,12.46947s8.313,9.69847,30.48092,5.542,13.855-18.01145,13.855-18.01145S687.9339,825.11641,690.70489,814.03244Z" transform="translate(-118.25 -16.78205)" fill="#2f2e41"/><path d="M502.97015,814.72518s33.25191.69275,33.25191,3.46374V863.9103c0,4.15649-5.542,9.69847-4.15649,12.46947s-8.313,9.69847-30.48092,5.542-13.855-18.01145-13.855-18.01145S505.74114,825.80915,502.97015,814.72518Z" transform="translate(-118.25 -16.78205)" fill="#2f2e41"/><path d="M712.87283,629.76143c-1.38549,15.24046-81.74428,16.626-95.59924,16.626-4.37838,0-7.92466-5.52812-10.72406-13.09287,14.867-2.95129,78.80754-14.99117,105.56155-9.76782A25.43567,25.43567,0,0,1,712.87283,629.76143Z" transform="translate(-118.25 -16.78205)" fill="#17a2b8"/><path d="M586.82041,628.12664c-4.808,6.484-11.37487,10.7376-20.11743,9.255-14.52-2.46622-44.76547-8.67322-52.64886-6.92748-12.46947,2.771-27.4745-5.26495-27.70993-8.313a35.6842,35.6842,0,0,1,.02774-5.00162C515.53636,616.34992,567.188,616.6963,586.82041,628.12664Z" transform="translate(-118.25 -16.78205)" fill="#17a2b8"/><path d="M532.75832,286.15836s-24.93893-8.313-47.10687,16.626l-4.15649,8.313s-31.86642,9.69848-41.56489,16.626c0,0-29.09542-6.92748-65.11832,0l-36.02291-8.313S269.514,270.9179,262.58655,301.39882s65.11832,41.56489,65.11832,41.56489l59.57634,16.62595s45.72138,11.084,63.73283,2.771c0,0,51.26336-2.771,60.96184-22.16794l20.78244,9.69847Z" transform="translate(-118.25 -16.78205)" fill="#9d616a"/><path d="M618.65909,279.23088s51.26336-5.542,70.66031,20.78244l40.17939,11.084s44.33588-8.313,60.96183-4.15648l36.02291-9.69848s34.6374-55.41985,54.03435-40.17939-45.72138,63.73283-45.72138,63.73283l-87.28626,29.09542s-67.88932,5.542-81.74428-19.397L650.5255,365.13165l-58.19084-13.855Z" transform="translate(-118.25 -16.78205)" fill="#9d616a"/><circle cx="451.91672" cy="218.11295" r="37.4084" fill="#9d616a"/><path d="M550.76977,257.06294v30.48092l13.855,48.49237,41.56489-48.49237s-11.084-33.25191-11.084-38.7939S550.76977,257.06294,550.76977,257.06294Z" transform="translate(-118.25 -16.78205)" fill="#9d616a"/><path d="M660.91672,457.26715s-.67922,5.00162-6.983,5.45877c-12.62168.92835-33.87566,3.07576-47.74415,7.70344-20.78244,6.92749-83.12977,6.92749-83.12977,6.92749L519.0143,351.85849l1.9673-9.58753c-1.3855-11.084,9.69847-55.41985,9.69847-55.41985l8.09109-5.97149,7.579-1.63487,2.34141,2.06438c0,18.45482,18.01145,36.0229,18.01145,36.0229,26.32443-12.46947,37.4084-40.17939,37.4084-40.17939l7.80018-1.15,8.16076.91439,7.3848.83135-2.5633,2.17524-1.3855,2.771c-.08321.16625.069-.16625,0,0-20.1729,42.798,4.18423,62.15351,19.39695,70.66031,6.30442,3.54695,6.92748,6.92748,6.92748,6.92748s5.6942-1.70413,5.542,4.15649c-.45732,18.96753-3.90686,61.7931,1.38549,73.4313C663.68772,453.11066,660.91672,457.26715,660.91672,457.26715Z" transform="translate(-118.25 -16.78205)" fill="#efefef"/><path d="M530.68007,209.60529a93.27626,93.27626,0,0,1,3.15894-9.06556c1.57946-3.62622,0-14.50488,1.57946-14.50488h6.31787l7.89732-7.25245,4.7384,3.62622,6.31786-3.62622,7.89733,3.62622,7.89733-3.62622,12.63573,9.06556,3.15893-1.81311,3.15893,5.43933h1.57947l6.31786,9.06555h3.15893v9.06556h3.15893v23.57044l-4.15649,16.267-1.38549-7.98178a.504.504,0,0,0-.92806-.27248l-3.00675,4.67905-1.92912-7.3816A49.34078,49.34078,0,0,0,579.79791,210.884c-11.68845-8.48128-28.58478-12.52-45.9589,11.41308Z" transform="translate(-118.25 -16.78205)" fill="#2f2e41"/><path d="M538.77116,280.87962c-2.63231,16.00247-10.58471,60.25514-19.75686,70.97887l-.11094-3.3528c-1.3855-11.084,8.313-65.11832,8.313-65.11832Z" transform="translate(-118.25 -16.78205)" fill="#17a2b8"/><path d="M611.91156,276.00265c-6.95522,13.13448-26.87849,47.03762-45.90133,44.79312-18.35783-2.16137-19.882-29.56653-19.66011-41.551l4.41965-.956c0,18.45482,16.626,34.194,16.626,34.194,26.32442-12.46947,34.70641-37.57465,34.70641-37.57465Z" transform="translate(-118.25 -16.78205)" fill="#17a2b8"/><path d="M657.453,355.43317s-.15221,3.713-.30443,9.57366a57.66579,57.66579,0,0,1-11.41681-1.7733C602.93357,351.9417,615.445,293.82011,620.07232,276.917l7.3848.83135h.01353c.20769.194.42959.40176.65148.60962-20.1729,42.798,2.84,63.60818,18.05272,72.115A57.88143,57.88143,0,0,0,657.453,355.43317Z" transform="translate(-118.25 -16.78205)" fill="#17a2b8"/><path d="M664.38046,462.11639s-4.143.15238-10.44669.60953A329.94787,329.94787,0,0,1,646.369,427.479c-1.82861-12.802-1.24681-44.29427-.63727-64.24545.16642-5.22335.31864-9.67091.44311-12.76054a57.88143,57.88143,0,0,0,11.27813,4.96018s-.15221,3.713-.30443,9.57366c-.45732,18.96753-.83143,60.53242,4.46092,72.17062C668.537,452.41791,664.38046,462.11639,664.38046,462.11639Z" transform="translate(-118.25 -16.78205)" fill="#17a2b8"/><path d="M534.83656,367.10234s44.33588-21.21213,87.28627,0" transform="translate(-118.25 -16.78205)" fill="#17a2b8"/><path d="M525.489,477.7824s13-1,45,2,85-17,85-17" transform="translate(-118.25 -16.78205)" fill="#cacaca"/><path d="M350.51,254.29v.95c0,.25,0,.51-.02.76a58.68911,58.68911,0,0,1-12.87,35.6c-.41.53-.84,1.04-1.27991,1.55-.66016.78-1.34009,1.53-2.04,2.27-.06006.06-.12012.13-.19006.19l-.02991.03c-.08008.08-.16016.17-.24.25q-1.84515,1.90494-3.87012,3.65c-.27.23-.55.47-.84.7A58.79236,58.79236,0,0,1,292,313.8c-.1.01-.21.01-.31006.01h-.34985c-.1001,0-.20008,0-.3-.01-.3501,0-.69006-.01-1.04-.02a58.72831,58.72831,0,0,1-36.90991-14.19c-.28-.23-.56006-.47-.83008-.72-1.07007-.94-2.1001-1.93-3.09009-2.95-.07983-.08-.15991-.17-.24-.25l-.02991-.03c-.06994-.06-.13-.13-.19006-.19-.84-.88-1.6499-1.79-2.42993-2.72q-.64508-.765-1.26-1.56A58.61459,58.61459,0,0,1,232.49,256c-.02-.24-.02-.49-.02-.74v-.93c0-.11,0-.22.01-.33A58.69289,58.69289,0,0,1,244.79,218.68q.61486-.795,1.26-1.56c.79-.96,1.61987-1.89,2.47-2.8.06006-.07.12-.13.18994-.2,0-.01.01-.02.02-.03.08008-.08.16-.17.25-.25q1.66517-1.725,3.47-3.32c.27-.25.55-.49.83008-.72a58.77748,58.77748,0,0,1,37.7-14.03c.1001-.01.21-.01.31006-.01h.6499a58.80169,58.80169,0,0,1,37,13.4c.28.24.56006.47.84009.71,1.46,1.24,2.86,2.56,4.18994,3.94.08008.08.16.17.24.25l.02.02c.07007.06.14.14.2.2.74.78,1.45007,1.59,2.14014,2.41.43994.51.85986,1.02,1.27991,1.55A58.69052,58.69052,0,0,1,350.5,254,2.807,2.807,0,0,1,350.51,254.29Z" transform="translate(-118.25 -16.78205)" fill="#17a2b8"/><rect x="171.75" y="179.21795" width="2" height="118" fill="#fff"/><rect x="113.75" y="237.21795" width="118.51001" height="2" fill="#fff"/><path d="M265.98,254a45.92906,45.92906,0,0,0-19.92993-36.88q-.64507.765-1.26,1.56A43.96072,43.96072,0,0,1,263.99,254c.01.33.01.66.01,1s0,.67-.01,1a44.004,44.004,0,0,1-18.97,35.17q.61487.795,1.26,1.56A45.95941,45.95941,0,0,0,265.98,256c.02-.33.02-.67.02-1S266,254.33,265.98,254Z" transform="translate(-118.25 -16.78205)" fill="#fff"/><path d="M318.01,256c-.01-.33-.01-.66-.01-1s0-.67.01-1a43.99751,43.99751,0,0,1,19.84-35.76c-.42005-.53-.84-1.04-1.27991-1.55A45.96454,45.96454,0,0,0,316.02,254c-.02.33-.02.67-.02,1s0,.67.02,1a45.95016,45.95016,0,0,0,20.32007,37.15c.43994-.51.86987-1.02,1.27991-1.55A43.981,43.981,0,0,1,318.01,256Z" transform="translate(-118.25 -16.78205)" fill="#fff"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- More Section -->
+            <section>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center mr-auto ml-auto wow animate__animated animate__fadeInUp vh-100" id="more">
+                        <div class="col-lg text-center">
+                            <p class="lead font-weight-bold">BERITA MASA KINI</p>
+                            <h1 class="display-5">Melihat berita secara <b>ON<span class="text-info">LINE</span></b> pada masa kini.</h1>
+                            <p class="lead">Hanya dengan satu klik, Anda bisa membaca berita secara online. <b>NewsWebPaper.id</b> Menyediakan banyak tipe berita yang bisa Anda lihat secara realtime pada website ini.</p>
+                            <p class="pt-5"><a href="./news/" class="btn btn-info btn-lg animate__animated animate__fadeIn shadow">Baca Berita</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        <!-- Footer -->
+        <section>
+            <div class="row align-items-center shadow mt-5 mr-auto ml-auto pt-5 pb-5 bg-dark text-light mt-0 mb-0" id="footer">
+                <div class="col-lg-4 mt-2">
+                    <div class="container-fluid text-center">
+                        <h1>NewsWebPaper.id</h1>
+                        <p class="lead font-italic">Satu Berita Indonesia</p>
+                        <Br>
+                        <h6 class="">&copy;2021, NewsWebPaper.id, All Rights Reserved.</h6>
+                    </div>
+                </div>
+                <div class="text-center col-lg-1 d-lg-block d-sm-none d-md-none">
+
+                </div>
+                <div class="col-lg-7 mt-2 text-left">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 mt-1">
+                                <a href="#bisnis" class="d-block text-light p-1">Berita Bisnis</a>
+                                <a href="#sports" class="d-block text-light p-1">Berita Sports</a>
+                                <a href="#lifestyle" class="d-block text-light p-1">Berita Lifesyle</a>
+                                <a href="#travel" class="d-block text-light p-1">Berita Travel</a>
+                                <a href="#otomatif" class="d-block text-light p-1">Berita Otomotif</a>
+                                <a href="#techno" class="d-block text-light p-1">Berita Techno</a>
+                            </div>
+                            <div class="col-md-4 col-sm-4 mt-1">
+                                <a href="./about_us/" class="d-block text-light p-1">Tentang Kami</a>
+                                <a href="./career/" class="d-block text-light p-1">Karir</a>
+                                <a href="./contact_us/" class="d-block text-light p-1">Contact Us</a>
+                                <a href="./maps/" class="d-block text-light p-1">Our Location</a>
+                            </div>
+                            <div class="col-md-4 col-sm-4 mt-1">
+                                <a href="#" class="btn btn-secondary d-block text-light shadow mt-1 mb-1 text-left "><i class="fab fa-instagram"></i> Instagram</a>
+                                <a href="#" class="btn btn-primary d-block text-light shadow mt-1 mb-1 text-left "><i class="fab fa-facebook"></i> Facebook</a>
+                                <a href="#" class="btn btn-info d-block text-light shadow mt-1 mb-1 text-left "><i class="fab fa-twitter"></i> Twitter</a>
+                                <a href="#" class="btn btn-danger d-block text-light shadow mt-1 mb-1 text-left "><i class="fab fa-youtube"></i> YouTube</a>
+                                <a href="#" class="btn btn-success d-block text-light shadow mt-1 mb-1 text-left "><i class="fab fa-line"></i> Line</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="row mr-auto ml-auto bg-dark text-light">
+                <div class="col mt-2 text-center">
+                    <div class="container-fluid">
+                        <p class="lead">Template by Akbar Bintang M</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Scroll to Top -->
+        <div class="row text-center" style="position: fixed; right: 15px; bottom: 20px; ">
+            <div class="col">
+                <a class="scrollto btnup js-scroll-trigger btn btn-info btn-lg animate__animated d-none shadow" href="#top" role="button"><i class="fa fa-arrow-up"></i></a>
+            </div>
+        </div>
+        
+        <!-- Login Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content shadow-lg">
+                    <div class="modal-header bg-light text-dark">
+                        <h5 class="modal-title" id="exampleModalLabel">Login NewsWebPaper.id</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="" method="POST">
+                        <div class="modal-body bg-light text-dark">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control shadow" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control shadow" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Ingat Saya</label>
+                            </div> 
+                        </div>
+                        <div class="modal-footer bg-light text-dark">
+                            <button type="button" class="btn btn-secondary shadow" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-info shadow" name="exampleLogin1">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sign Up Modal -->
+        <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content shadow-lg">
+                    <div class="modal-header bg-light text-dark">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign Up NewsWebPaper.id</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="" method="POST">
+                        <div class="modal-body bg-light text-dark">
+                            <div class="form-group">
+                                <label for="exampleInputName1">Name</label>
+                                <input type="text" class="form-control shadow" id="exampleInputName1" aria-describedby="nameHelp" required="required">
+                                <small id="nameHelp" class="form-text text-muted">Your name will publicly generated.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control shadow" id="exampleInputEmail1" aria-describedby="emailHelp" required="required">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control shadow" id="exampleInputPassword1" aria-describedby="passwordHelp" required="required">
+                                <small id="passwordHelp" class="form-text text-muted">Use the strong words for passwords.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword2">RePassword</label>
+                                <input type="password" class="form-control shadow" id="exampleInputPassword2" aria-describedby="repasswordHelp" required="required">
+                                <small id="repasswordHelp" class="form-text text-muted">Use the same passwords for passwords.</small>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required="required">
+                                <label class="form-check-label" for="exampleCheck1">Saya telah mematuhi peraturan NewsWebPaper.id</label>
+                            </div> 
+                        </div>
+                        <div class="modal-footer bg-light text-dark">
+                            <button type="button" class="btn btn-secondary shadow" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-info shadow" name="exampleLogin1">Daftar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Toats 
+        <div aria-live="polite" aria-atomic="true" style="position: relative;">
+            <div style="position: fixed; bottom: 70px; right: 20px;">
+                <div class="toast w-100 shadow bg-light animate__animated animate__fadeInRight animate__delay-1s" role="alert" aria-live="assertive" aria-atomic="true" data-delay="30000" data-animaton="true" autohide="false">
+                    <div class="toast-header">
+                        <i class="fa fa-exclamation-triangle text-danger"></i>
+                        <strong class="mr-auto">Berita Baru!</strong>
+                        <small class="text-muted">Baru Saja</small>
+                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="toast-body">
+                        <p>Ramadhan segera tiba! Siapkan diri Anda.</p>
+                        <p class="text-right"><a href="#">Info Selebihnya</a></p>
+                    </div>
+                </div>
+                <div class="toast w-100 shadow bg-light animate__animated animate__fadeInRight" role="alert" aria-live="assertive" aria-atomic="true" data-delay="20000" data-animaton="true" autohide="false">
+                    <div class="toast-header">
+                        <i class="fa fa-exclamation-triangle text-danger"></i>
+                        <strong class="mr-auto">Berita Baru!</strong>
+                        <small class="text-muted">Baru Saja</small>
+                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="toast-body">
+                        <p>Nilai Bitcoin akan naik pada 2021, harap bersabar.</p>
+                        <p class="text-right"><a href="#">Info Selebihnya</a></p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+        
+        <!-- JS Library -->
+        <script src="./assets/plugins/jquery/jquery-3.6.0.min.js"></script>
+        <script src="./assets/plugins/popper/popper.min.js"></script>   
+        <script src="./assets/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/plugins/darkmode/dark-mode-switch.min.js"></script>
+        <script src="./assets/plugins/typed/lib/typed.min.js"></script>
+        <script src="./assets/plugins/waves/dist/waves.min.js"></script>
+        <script src="./assets/plugins/wow/dist/wow.min.js"></script>
+        <script src="./assets/plugins/jquery-easing/jquery.easing.min.js"></script>
+        
+        <!-- Custom JS -->
+        <script src="./lib/js/main.min.js"></script>
+        
+        <!-- 
+        New Web Paper - Koran Online, 2021.
+        Nama : Akbar Bintang Mahendra
+        NPM : 13.2019.1.00812
+        SISTEM INFORMASI PAGI
+        PEMROGRAMAN SISTEM INFORMASI
+        
+        All Rights Reserved.
+        -->
+    </body>
+</html>
