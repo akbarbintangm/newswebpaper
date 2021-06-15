@@ -1,0 +1,58 @@
+{
+  "name": "isotope-layout",
+  "version": "3.0.6",
+  "description": "Filter and sort magical layouts",
+  "main": "js/isotope.js",
+  "files": [
+    "js",
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "node bin/lint-json.js && npx eslint .",
+    "lintFix": "npx eslint . --fix",
+    "dist": "npm run bundleJs && npm run uglify",
+    "bundleJs": "node bin/bundle-js.js",
+    "uglify": "npx uglifyjs dist/isotope.pkgd.js -o dist/isotope.pkgd.min.js --mangle --comments /^!/",
+    "version": "node bin/version.js && npm run dist && git add -A css js dist"
+  },
+  "dependencies": {
+    "desandro-matches-selector": "^2.0.0",
+    "fizzy-ui-utils": "^2.0.4",
+    "get-size": "^2.0.0",
+    "masonry-layout": "^4.1.0",
+    "outlayer": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-metafizzy": "^1.0.0",
+    "jquery": "^3.3.1",
+    "jquery-bridget": "^2",
+    "jshint": "^2.11.0",
+    "qunitjs": "^1.15",
+    "requirejs": "^2.3.6",
+    "uglifyjs": "^2.4.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/metafizzy/isotope.git"
+  },
+  "bugs": {
+    "url": "https://github.com/metafizzy/isotope/issues"
+  },
+  "homepage": "https://isotope.metafizzy.co",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "DOM",
+    "browser",
+    "masonry",
+    "layout",
+    "filter",
+    "sort",
+    "jquery-plugin"
+  ],
+  "author": "Metafizzy",
+  "license": "GPL-3.0"
+}
